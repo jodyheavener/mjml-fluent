@@ -1,0 +1,26 @@
+{
+  "name": "mjml-fluent",
+  "description": "Fluent localization component for MJML",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MPL-2.0",
+  "scripts": {
+    "build": "tsc",
+    "mjml": "ts-node ./example/compile.ts",
+    "watch": "nodemon -e ts,mjml,ftl --exec 'yarn mjml'"
+  },
+  "devDependencies": {
+    "@fluent/bundle": "^0.16.1",
+    "@fluent/langneg": "^0.5.2",
+    "@fluent/sequence": "^0.6.0",
+    "@types/mjml": "^4.7.0",
+    "@types/node": "^16.7.10",
+    "cached-iterable": "^0.3.0",
+    "mjml": "^4.10.2",
+    "mjml-core": "^4.10.2",
+    "node-html-parser": "^4.1.4",
+    "nodemon": "^2.0.12",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.2"
+  }
+}

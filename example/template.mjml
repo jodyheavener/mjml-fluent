@@ -1,0 +1,40 @@
+<!--
+  This Source Code Form is subject to the terms of the Mozilla Public
+  License, v. 2.0. If a copy of the MPL was not distributed with this
+  file, You can obtain one at http://mozilla.org/MPL/2.0/.
+-->
+
+<mjml>
+  <mj-body>
+
+    <mj-section>
+      <mj-column>
+
+        <mj-localize id="text-example-link">
+          <mj-text color="blue" font-size="10px">
+            This is the fallback text example.
+            <a href="http://www.com" data-l10n-id="inner-link-example">This is a link</a>.
+          </mj-text>
+        </mj-localize>
+
+        <mj-localize id="text-example-args" args='{ "foo": "bar" }'>
+          <mj-text color="blue" font-size="10px">
+            This is the second fallback text example.
+          </mj-text>
+        </mj-localize>
+
+        <mj-localize id="image-example" attrs="alt,title" args='{ "lorem": "ipsum" }'>
+          <mj-image width="300px" src="image.png" alt="This is the image's fallback alt text" title="This is the image's fallback title text" />
+        </mj-localize>
+
+        <mj-localize id="button-example" attrs="title">
+          <mj-button font-family="Helvetica" background-color="#f45e43" color="white" title="This is the button's fallback title text">
+            This is the fallback button example
+          </mj-button>
+        </mj-localize>
+
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>
