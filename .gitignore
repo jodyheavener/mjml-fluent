@@ -1,2 +1,5 @@
 /node_modules
+/coverage
+/dist
 /example/output.html
+.DS_Store

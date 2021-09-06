@@ -1,11 +1,7 @@
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
-
-import { FluentBundle, FluentVariable } from "@fluent/bundle";
-import { mapBundleSync } from "@fluent/sequence";
+import { FluentBundle, FluentVariable } from '@fluent/bundle';
+import { mapBundleSync } from '@fluent/sequence';
 // @ts-expect-error
-import { CachedSyncIterable } from "cached-iterable";
+import { CachedSyncIterable } from 'cached-iterable';
 
 export default class MjmlLocalization {
   bundles: Iterable<FluentBundle>;
@@ -23,22 +19,27 @@ export default class MjmlLocalization {
     args?: Record<string, FluentVariable> | null,
     fallback?: string
   ): string {
-    const bundle = this.getBundle(id);
+    const [key, attr] = id.split('.');
+    const bundle = this.getBundle(key);
     const errors: Error[] = [];
 
     if (bundle) {
-      const msg = bundle.getMessage(id);
+      const msg = bundle.getMessage(key);
 
-      if (msg && msg.value) {
-        return bundle.formatPattern(msg.value, args, errors);
+      if (msg) {
+        if (attr && msg.attributes[attr]) {
+          return bundle.formatPattern(msg.attributes[attr], args, errors);
+        } else if (msg.value) {
+          return bundle.formatPattern(msg.value, args, errors);
+        }
       }
     }
 
-    for (let error of errors) {
+    for (const error of errors) {
       this.reportError(error);
     }
 
-    return fallback || id;
+    return fallback || key;
   }
 
   reportError(error: Error): void {

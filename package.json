@@ -1,25 +1,54 @@
 {
   "name": "mjml-fluent",
-  "description": "Fluent localization component for MJML",
   "version": "0.1.0",
-  "main": "index.js",
-  "license": "MPL-2.0",
+  "description": "Fluent localization component for MJML",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist/"],
+  "author": "Jody Heavener <j.heavener@gmail.com>",
+  "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "mjml": "ts-node ./example/compile.ts",
-    "watch": "nodemon -e ts,mjml,ftl --exec 'yarn mjml'"
+    "lint": "eslint . --ext .ts",
+    "test": "jest",
+    "test:update": "yarn test --updateSnapshot",
+    "test:cov": "yarn test --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jodyheavener/mjml-fluent"
+  },
+  "bugs": {
+    "url": "https://github.com/jodyheavener/mjml-fluent/issues"
+  },
+  "homepage": "https://github.com/jodyheavener/mjml-fluent#readme",
+  "dependencies": {
+    "@fluent/bundle": "^0.16.1",
+    "@fluent/sequence": "^0.6.0",
+    "cached-iterable": "^0.3.0",
+    "jsdom": "^17.0.0",
+    "mjml-core": "^4.10.2"
   },
   "devDependencies": {
-    "@fluent/bundle": "^0.16.1",
     "@fluent/langneg": "^0.5.2",
-    "@fluent/sequence": "^0.6.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@types/jest": "^27.0.1",
+    "@types/jsdom": "^16.2.13",
     "@types/mjml": "^4.7.0",
     "@types/node": "^16.7.10",
-    "cached-iterable": "^0.3.0",
+    "@typescript-eslint/eslint-plugin": "^4.31.0",
+    "@typescript-eslint/parser": "^4.31.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^27.1.1",
+    "jest-environment-jsdom": "^27.1.1",
     "mjml": "^4.10.2",
-    "mjml-core": "^4.10.2",
-    "node-html-parser": "^4.1.4",
+    "mjml-testing-library": "^0.1.4",
     "nodemon": "^2.0.12",
+    "prettier": "^2.4.0",
+    "prettier-plugin-organize-imports": "^2.3.3",
+    "ts-jest": "^27.0.5",
     "ts-node": "^10.2.1",
     "typescript": "^4.4.2"
   }

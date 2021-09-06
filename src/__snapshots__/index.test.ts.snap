@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MjLocalize localizes mj-button 1`] = `
+<p
+  style="display:inline-block;background:#414141;color:#ffffff;font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;font-weight:normal;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:3px;"
+>
+  
+                This is localized button text
+              
+</p>
+`;
+
+exports[`MjLocalize localizes mj-image 1`] = `
+<img
+  alt="This is a localized image alt"
+  height="auto"
+  src="image.png"
+  style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;"
+  title="This is a localized image title"
+  width="550"
+/>
+`;
+
+exports[`MjLocalize localizes mj-text 1`] = `
+<div
+  style="font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;line-height:1;text-align:left;color:#000000;"
+>
+  This is some localized basic text
+</div>
+`;
