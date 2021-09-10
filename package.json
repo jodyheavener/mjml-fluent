@@ -30,7 +30,6 @@
     "mjml-core": "^4.10.2"
   },
   "devDependencies": {
-    "@fluent/langneg": "^0.5.2",
     "@testing-library/jest-dom": "^5.14.1",
     "@types/jest": "^27.0.1",
     "@types/jsdom": "^16.2.13",
@@ -44,7 +43,7 @@
     "jest": "^27.1.1",
     "jest-environment-jsdom": "^27.1.1",
     "mjml": "^4.10.2",
-    "mjml-testing-library": "^0.1.4",
+    "mjml-testing-library": "^0.1.5",
     "nodemon": "^2.0.12",
     "prettier": "^2.4.0",
     "prettier-plugin-organize-imports": "^2.3.3",

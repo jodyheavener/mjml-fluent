@@ -1,4 +1,3 @@
-import '@testing-library/jest-dom';
 import { MJMLJsonWithContent } from 'mjml-core';
 import MjLocalize, { MjmlLocalization } from '.';
 import localizeComponent from './localize';

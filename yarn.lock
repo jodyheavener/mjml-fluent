@@ -3525,10 +3525,10 @@ mjml-table@4.10.2:
     lodash "^4.17.21"
     mjml-core "4.10.2"
 
-mjml-testing-library@^0.1.4:
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/mjml-testing-library/-/mjml-testing-library-0.1.4.tgz#1a07f8b911fa6336a9bb3bbe1e77ce4ac438b22d"
-  integrity sha512-qfa6WDmKJrbEBNrUHtgPvAv8PEvq3bxzzAJXaVVhZOuSw/Wi5jXKvOWSrZ0QYtaCrUwPeaAdDBy7STiPD4XMHw==
+mjml-testing-library@^0.1.5:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/mjml-testing-library/-/mjml-testing-library-0.1.5.tgz#c72aca86f2c8ebd1652f0acdae090035f1495e2b"
+  integrity sha512-xyP+Cxr0kCZqDujz7vqWwIsahEmB/NCbc0h7bJtoWIdC99GM3VZX/MSOr7HMOCRr17wa2tUNr0T3T5tr0BsdbQ==
   dependencies:
     "@testing-library/dom" "^8.2.0"
     jsdom "^17.0.0"

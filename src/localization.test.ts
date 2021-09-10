@@ -1,4 +1,3 @@
-import '@testing-library/jest-dom';
 import { MjmlLocalization } from '.';
 import { setUpBundle } from './tests/fluent';
 
